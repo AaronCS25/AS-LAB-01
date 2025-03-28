@@ -6,7 +6,7 @@ router = APIRouter(prefix="/products", tags=["products"])
 def root():
     return {"message": "Product Module"}
 
-@routr.get("/promo-products")
+@router.get("/promo-products")
 def root():
     return{"message": ""}
 
