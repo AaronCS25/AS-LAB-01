@@ -7,14 +7,6 @@ from app.features.payment.routes import router as payment_router
 from app.features.products.routes import router as products_router
 from app.features.stores.routes import router as stores_router
 from app.features.users.routes import router as users_router
-from supabase import create_client, Client
-
-
-SUPABASE_URL = "https://aiwancdhwmeohztppcg.supabase.co"
-SUPABASE_KEY = ""
-
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
-
 
 app = FastAPI()
 
